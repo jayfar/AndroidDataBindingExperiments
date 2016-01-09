@@ -22,8 +22,8 @@ public class MainActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         MainViewModel vm = new MainViewModel();
-        vm.setFirstName("Hank");
-        vm.setLastName("Williams");
+        vm.firstName.set("Hank");
+        vm.lastName.set("Williams");
 
         // Use this when setting up an activity with DataBinding.
         //ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.fragment_main);
